@@ -14,3 +14,5 @@ choco install chocolatey-core.extension -y $cache
 choco feature enable --name=allowGlobalConfirmation
 choco feature enable -n=useRememberedArgumentsForUpgrades
 Write-Host "Done"
+
+Start-BitsTransfer -Source "https://github.com/RalfEs73/chocolatey-test-environment/raw/main/test-install.ps1" -Destination "C:\Users\$CurrentUserName\Desktop\test-install.ps1"

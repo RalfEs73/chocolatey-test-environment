@@ -16,3 +16,4 @@ choco feature enable -n=useRememberedArgumentsForUpgrades
 Write-Host "Done"
 
 Start-BitsTransfer -Source "https://github.com/RalfEs73/chocolatey-test-environment/raw/main/loop-install.ps1" -Destination "C:\Users\$CurrentUserName\Desktop\loop-install.ps1"
+Start-BitsTransfer -Source "https://github.com/RalfEs73/chocolatey-test-environment/raw/main/offline-install.ps1" -Destination "C:\Users\$CurrentUserName\Desktop\offline-install.ps1"

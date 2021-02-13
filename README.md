@@ -22,7 +22,7 @@
 
 
 
-# Chocolatey Testumgebung Script
+# Chocolatey Testumgebung
 Dieses Script installiert Chocolatey und konfiguriert einige Basics für meine Parkettierung Umgebung.
 
 ## Aufruf

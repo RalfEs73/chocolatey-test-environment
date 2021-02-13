@@ -23,12 +23,12 @@
 
 
 # Chocolatey Testumgebung
-Dieses Script installiert Chocolatey und konfiguriert einige Basics für meine Parkettierung Umgebung.
+Dieses Script installiert Chocolatey und konfiguriert einige Basics für meine Parkettierungsugebung.
 
 ## Aufruf
 Mit PowerShell (und Adminrechten) den folgenden Befehl starten:
 ```sh
-iex ((New-Object System.Net.WebClient).DownloadString('https://github.com/RalfEs73/chocolatey-test-environment/raw/main/test-install.ps1'))
+iex ((New-Object System.Net.WebClient).DownloadString('https://github.com/RalfEs73/chocolatey-test-environment/raw/main/install.ps1'))
 ```
 
 <!-- MARKDOWN LINKS & IMAGES -->

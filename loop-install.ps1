@@ -10,7 +10,7 @@ $CurrentUserName = $CurrentUser.split("\")[1]
 
 Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Force
 
-For ($i=1; $i -lt $loops; $i++) {
+For ($i=0; $i -lt $loops; $i++) {
 	$temp = $i + 1
     Write-Host "*** Durchlauf $temp von $loops ***" -ForegroundColor Red -BackgroundColor White
 	choco install $package $version --force

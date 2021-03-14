@@ -1,8 +1,9 @@
-$gitpackageurl = "https://github.com/RalfEs73/chocolatey-packages/raw/master/planetmule/planetmule.1.3.6.nupkg"
-$gitpackage = "planetmule.1.3.6.nupkg"
 $package = "planetmule"
-$hash = "1BB29F9B518C91D7BF9B9FA5F7FCC2455B8C0DD54E9E3A741F39184C00F3F7EE"
+$packageversion = "1.3.6"
+$hash = "BACB18AAE87B6FCC7BE42CF579D078DE6C7E58171A668EBADF01DEBEE0AC7C8F"
 
+$gitpackage = $package + "." + $packageversion + ".nupkg"
+$gitpackageurl = "https://github.com/RalfEs73/chocolatey-packages/raw/master/" + $package + "/" + $gitpackage
 $CurrentUser = [System.Security.Principal.WindowsIdentity]::GetCurrent().Name
 $CurrentUserName = $CurrentUser.split("\")[1]
 

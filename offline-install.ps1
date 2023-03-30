@@ -1,6 +1,7 @@
 $package = "planetmule"
 $version = "1.3.6"
 $hash = "BACB18AAE87B6FCC7BE42CF579D078DE6C7E58171A668EBADF01DEBEE0AC7C8F"
+$uninstall = 0
 
 $gitpackage = $package + "." + $version + ".nupkg"
 $gitpackageurl = "https://github.com/RalfEs73/chocolatey-packages/raw/master/" + $package + "/" + $gitpackage
@@ -19,6 +20,9 @@ if((Get-FileHash $gitpackage).hash -ne $hash)
     choco install $package -s . -force
     del $gitpackage
     Write-Host "Done"
-    choco uninstall $package
-    Write-Host "Done"
+	if($uninstall -eq 1)
+		{
+		choco uninstall $package
+		Write-Host "Done"
+		}
     }
